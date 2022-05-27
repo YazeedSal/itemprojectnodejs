@@ -1,7 +1,12 @@
-import express from "express"
+const express = require('express')
+const mongoose = require('mongoose')
+require('dotenv').config()
+
+mongoose.connect(process.env.MONGODB_URL).then(()=>console.log("connected to database"))
+
 
 const app = express()
-const PORT = 3001 
+const PORT = process.env.PORT 
 const items = [] 
 
 app.use(express.json())
