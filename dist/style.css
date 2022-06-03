@@ -1,0 +1,9 @@
+#getItemsBtn{
+    background-color: aqua;
+}
+
+.item{
+border-width: 10px;
+border-color: cadetblue;
+background-color: cadetblue;
+}
